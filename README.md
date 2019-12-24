@@ -6,11 +6,11 @@
 
 。。。
 
-2. 使用git下载程序
+2. 如果有git，使用git下载程序
 
 `git clone https://github.com/GeorgeChen-666/epubeeDownloader.git`
 
-3. 或者直接下载
+3. 如果没有git，直接下载解压
 
 。。。
 
