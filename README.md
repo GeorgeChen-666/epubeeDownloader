@@ -18,6 +18,6 @@
 
 `npm i`
 
-5. 运行程序
+5. 记录你的epubeeid然后运行程序
 
 `node index.js yourId`
