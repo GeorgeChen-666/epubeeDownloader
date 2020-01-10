@@ -9,7 +9,7 @@ async function run() {
   let isAdVisable = false;
   if(!isLogined) {
     console.log(new Date(),'准备登录！');
-    await chromeless.wait(5000).type('380465530@qq.com', 'input[id="retrieve_id"]');
+    await chromeless.wait(5000).type(uid, 'input[id="retrieve_id"]');
     await chromeless.wait(5000).click('input[id="retrieve_btn"]').wait(20000);
   } else {
     console.log(new Date(),'不用登陆！');
