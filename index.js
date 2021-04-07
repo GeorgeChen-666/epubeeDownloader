@@ -1,10 +1,11 @@
 const { Chromeless } = require('chromeless');
 const schedule = require('node-schedule');
 const [,,uid] = process.argv;
+const host = 'http://www.ferebook.com/';
 async function run() {
   const chromeless = new Chromeless();
   console.log(new Date(),'开始！');
-  await chromeless.goto('http://cn.epubee.com/files.aspx?sortkey=addtime&sort=asc&menukey=&menuvalue=&skeyinput=&iskindle=0&aff=0&prom=0').wait(5000);
+  await chromeless.goto(`${host}files.aspx?sortkey=addtime&sort=asc&menukey=&menuvalue=&skeyinput=&iskindle=0&aff=0&prom=0`).wait(5000);
   const isLogined = await chromeless.wait(1000).exists('a[id="gvBooks_gvBooks_child_0_hpdownload_0"]');
   let isAdVisable = false;
   if(!isLogined) {
