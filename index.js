@@ -46,3 +46,4 @@ schedule.scheduleJob('1 1 2-4 * * *',()=>{
   console.log('schedule:' + new Date());
   run().catch(console.error.bind(console))
 });
+console.log(new Date(),'请等待，不要关闭.....（凌晨会自动下载）');
